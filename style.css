@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  height: 100%;
+  width: 100%;
+  /* background-color: beige; */
+}
+#nav {
+  height: 120px;
+  width: 100%;
+  /* background-color: royalblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+#nav-part1 {
+  width: 30%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav-part2 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* background-color: yellow; */
+}
+#nav-part1 h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+#nav-part2 button {
+  padding: 16px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 0 10px;
+}
+#nav-part2 button:nth-child(1) {
+  background-color: rgba(158, 154, 154, 0);
+  color: black;
+}
+#nav img {
+  height: 110px;
+}
+
+#content {
+  height: calc(100% - 120px);
+  width: 100%;
+  /* background-color: rgb(53, 154, 187); */
+  padding-top: 90px;
+}
+#content h3 {
+  background-color: #f2b0ea;
+  padding: 12px 16px;
+  /* text-align: center; */
+  width: fit-content;
+  border-radius: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 900;
+}
+#content h1 {
+  font-size: 80px;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 100;
+  line-height: 80px;
+}
+#content h4 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+#content button {
+  padding: 18px 24px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background-color: black;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin: 30px 0px;
+}
+
+#bottom {
+  height: 550px;
+  width: 100%;
+  /* background-color: red; */
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+    gap: 30px;
+    overflow-y: auto;
+    overflow-y: hidden;
+    
+}
+
+
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+
+.elem {
+    position: relative;
+    flex-shrink: 0;
+  height: 100%;
+  width: 315px;
+  background-color: royalblue;
+  border-radius: 40px;
+  overflow: hidden;
+  /* border: 2px solid black; */
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.elem .text-bottom{
+    height: 33%;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.685);
+    bottom: 0;
+    color: white;
+    position: absolute;
+}
+.text-bottom h4{
+    margin-top: 40px;
+    font-size: medium;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(228, 192, 192); */
+    position: relative;
+    padding-left: 90px;
+    /* margin-right: auto; */
+    padding-top: 100px;
+}
+#page2 h1{
+  text-align: center;
+  font-weight: 200;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.box{
+  height: 320px;
+  width: 400px;
+  background-color: red;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+
+  margin: 15px;
+  position: relative;
+}
+
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.box-bottom{
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(transparent,rgb(107, 106, 106));
+  position: absolute;
+  bottom: -40%;
+  /* opacity: 0; */
+  transition: all ease 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.box-bottom i{
+  background-color: white;
+  padding: 8px 9px;
+  color: black;
+  font-size: 22px;
+  border-radius: 50%;
+  font-weight: 400;
+}
+.box-bottom h5{
+  font-size: 16px;
+  
+}
+.box:hover .box-bottom{
+    bottom: 0;
+    /* opacity: 1; */
+}
+
+.box:hover{
+  box-shadow: 5px 5px 10px black;
+}
